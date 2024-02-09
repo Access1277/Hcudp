@@ -1,0 +1,44 @@
+pkg update
+pkg upgrade
+pkg install git -y
+pkg install figlet
+pkg install zip
+pkg install openssh -y
+pkg install w3m -y
+pkg install curl -y
+pkg install wget -y
+pkg install nmap -y
+pkg install termimage -y
+pkg install play-audio -y
+pkg install nsnake -y
+pkg install bastet -y
+pkg install screenfetch -y
+pkg install tree -y
+pkg install htop
+echo ""
+mv system.py system.zip && pwd
+sleep 3
+unzip system.zip
+git && ls $HOME
+apt search ssh
+sleep 3
+mv system.zip .system
+mv ter $HOME/../usr/bin
+cp go $HOME/../usr/bin
+rm go
+chmod +x $HOME/../usr/bin/ter
+chmod +x $HOME/../usr/bin/go
+figlet DONE
+cp motd $HOME/../usr/etc
+cp bash.bashrc $HOME/../usr/etc
+sleep 0.1
+rm motd
+rm bash.bashrc
+mkdir .akun
+echo '
+   silahkan jalankan sc
+       
+        sh bot.sh
+'
+echo ""
+rm setup
